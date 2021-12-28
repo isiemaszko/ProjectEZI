@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -36,11 +37,11 @@ namespace projekt_EZI
                 txtEditor.Text = File.ReadAllText(openFileDialog.FileName);
 
             incidentList = new IncidentList(txtEditor.Text);
+            incidentList.createAdjacencyMatrix();
         }
 
         private void matrixBtn_Click(object sender, RoutedEventArgs e)
         {
-            incidentList.createAdjacencyMatrix();
             createMatrix();
         }
 
@@ -51,8 +52,33 @@ namespace projekt_EZI
             var dialog = new Window() { Content = matrix.createMatrix() };
             dialog.ShowDialog();
             
-            // this.Content = flowDoc;
-            // matrixGrid.Children.Add((UIElement)table1);
         }
+
+        private void btnPageRank_Click(object sender, RoutedEventArgs e)
+        {
+            //liczba itercji, d
+            double D = double.Parse(DTextBox.Text);
+            int iteration = int.Parse(IterationTextBox.Text);
+            var algorithmPageRank = new PageRank.PageRankAlgorithm(incidentList.matrix, D, iteration);
+            double[] ranking =algorithmPageRank.CreateRanking();
+            CreateRanking(ranking);
+        }
+        private void CreateRanking(double[] ranking)
+        {
+            for (int i = 0; i < incidentList.incList.Count; i++)
+            {
+                this.RankingListView.Items.Add(new MyItem { Name = incidentList.incList[i].name, Ranking = ranking[i] });
+            }
+           
+
+        }
+
+        void rankingColumnHeader_Click(object sender,
+                                           RoutedEventArgs e)
+        {
+            int ddd = 0;
+        }
+
+       
     }
 }
