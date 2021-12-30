@@ -26,6 +26,7 @@
         <Label Content="D" HorizontalAlignment="Left" Margin="199,55,0,0" VerticalAlignment="Top"/>
         <Label Content="Iteration" HorizontalAlignment="Left" Margin="199,81,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="IterationTextBox" HorizontalAlignment="Left" Margin="259,85,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
+        <Button x:Name="GenerateBtn" Content="Generate" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Click="GenerateBtn_Click"/>
 
     </Grid>
 </Window>
