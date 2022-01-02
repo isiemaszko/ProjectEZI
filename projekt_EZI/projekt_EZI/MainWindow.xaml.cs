@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using projekt_EZI.PrestigeCalculation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -149,6 +150,9 @@ namespace projekt_EZI
             dataView.Refresh();
         }
 
-      
+        private void btnEigenvector_Click(object sender, RoutedEventArgs e)
+        {
+            CreateRanking(Eigenvector.CalculateEigenvectorsRanking(incidentList.matrix));
+        }
     }
 }

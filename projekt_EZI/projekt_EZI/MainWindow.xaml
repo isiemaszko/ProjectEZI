@@ -27,6 +27,8 @@
         <Label Content="Iteration" HorizontalAlignment="Left" Margin="199,81,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="IterationTextBox" HorizontalAlignment="Left" Margin="259,85,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
         <Button x:Name="GenerateBtn" Content="Generate" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Click="GenerateBtn_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="46" Margin="194,171,0,0" Stroke="Black" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="btnEigenvector" Content="Eigenvector" HorizontalAlignment="Left" Margin="208,184,0,0" VerticalAlignment="Top" Click="btnEigenvector_Click"/>
 
     </Grid>
 </Window>
