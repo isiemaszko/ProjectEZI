@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\izabe\\OneDrive\\Pulpit\\sem_2\\EZI\\projekt\\ProjectEZI\\projekt_EZI\\projekt_EZI\\projekt_EZI.csproj": {}
+    "E:\\Adas\\STUDIA\\SEMESTR2M\\EZI-projekt\\projekt_EZI\\projekt_EZI\\projekt_EZI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\izabe\\OneDrive\\Pulpit\\sem_2\\EZI\\projekt\\ProjectEZI\\projekt_EZI\\projekt_EZI\\projekt_EZI.csproj": {
+    "E:\\Adas\\STUDIA\\SEMESTR2M\\EZI-projekt\\projekt_EZI\\projekt_EZI\\projekt_EZI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\izabe\\OneDrive\\Pulpit\\sem_2\\EZI\\projekt\\ProjectEZI\\projekt_EZI\\projekt_EZI\\projekt_EZI.csproj",
+        "projectUniqueName": "E:\\Adas\\STUDIA\\SEMESTR2M\\EZI-projekt\\projekt_EZI\\projekt_EZI\\projekt_EZI.csproj",
         "projectName": "projekt_EZI",
-        "projectPath": "C:\\Users\\izabe\\OneDrive\\Pulpit\\sem_2\\EZI\\projekt\\ProjectEZI\\projekt_EZI\\projekt_EZI\\projekt_EZI.csproj",
-        "packagesPath": "C:\\Users\\izabe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\izabe\\OneDrive\\Pulpit\\sem_2\\EZI\\projekt\\ProjectEZI\\projekt_EZI\\projekt_EZI\\obj\\",
+        "projectPath": "E:\\Adas\\STUDIA\\SEMESTR2M\\EZI-projekt\\projekt_EZI\\projekt_EZI\\projekt_EZI.csproj",
+        "packagesPath": "C:\\Users\\adams\\.nuget\\packages\\",
+        "outputPath": "E:\\Adas\\STUDIA\\SEMESTR2M\\EZI-projekt\\projekt_EZI\\projekt_EZI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\izabe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adams\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +60,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
