@@ -9,10 +9,13 @@ namespace projekt_EZI.Matrix
         public Document document { get; set; }
         public Dictionary<Document, double> listOfDocuments { get; set; }
 
-        public RowOfMatrix(Document doc, Dictionary<Document, double> list)
+        public int LinkCounter { get; set; }
+
+        public RowOfMatrix(Document doc, Dictionary<Document, double> list, int links)
         {
             this.document = doc;
             this.listOfDocuments = list;
+            this.LinkCounter = links;
         }
     }
 }

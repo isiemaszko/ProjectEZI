@@ -7,9 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="118" Margin="195,48,0,0" Stroke="Black" VerticalAlignment="Top" Width="175"/>
         <Button x:Name="openFileBtn" Content="Open file" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" Click="openFileBtn_Click"/>
-        <TextBox Name="txtEditor" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="10,48,623,151" />
+        <TextBox x:Name="txtEditor" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="10,48,623,151" />
         <Button x:Name="matrixBtn" Content="Show Matrix" HorizontalAlignment="Left" Margin="195,15,0,0" VerticalAlignment="Top" Click="matrixBtn_Click"/>
+        <Button x:Name="btnPageRank" Content="PageRank" HorizontalAlignment="Left" Margin="208,112,0,0" VerticalAlignment="Top" Click="btnPageRank_Click"/>
+        <ListView x:Name="RankingListView" Margin="389,48,206,150">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="80" Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Width="100" DisplayMemberBinding="{Binding Ranking}">
+                        <GridViewColumnHeader Tag="Ranking" Click="rankingColumnHeader_Click" Content="Ranking" />
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox x:Name="DTextBox" HorizontalAlignment="Left" Margin="222,59,0,0" Text="0,85" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="D" HorizontalAlignment="Left" Margin="199,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="Iteration" HorizontalAlignment="Left" Margin="199,81,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="IterationTextBox" HorizontalAlignment="Left" Margin="259,85,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
+        <Button x:Name="GenerateBtn" Content="Generate" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Click="GenerateBtn_Click"/>
 
     </Grid>
 </Window>

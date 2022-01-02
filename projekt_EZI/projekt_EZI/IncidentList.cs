@@ -64,7 +64,7 @@ namespace projekt_EZI
                     }
                     
                 }
-               matrix.rows.Add(new Matrix.RowOfMatrix(docRow, dict));
+               matrix.rows.Add(new Matrix.RowOfMatrix(docRow, dict, listOFReferenceDocumentCount));
             }
         }
 
