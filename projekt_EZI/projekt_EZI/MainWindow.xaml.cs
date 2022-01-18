@@ -154,5 +154,11 @@ namespace projekt_EZI
         {
             CreateRanking(Eigenvector.CalculateEigenvectorsRanking(incidentList.matrix));
         }
+
+        private void visualizationBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Visualization v = new Visualization(incidentList.matrix);
+            v.Show();
+        }
     }
 }

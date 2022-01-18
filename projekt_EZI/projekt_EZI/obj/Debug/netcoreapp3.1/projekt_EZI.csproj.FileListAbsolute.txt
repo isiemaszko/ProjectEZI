@@ -18,3 +18,5 @@ E:\Adas\STUDIA\SEMESTR2M\EZI-projekt\projekt_EZI\projekt_EZI\obj\Debug\netcoreap
 E:\Adas\STUDIA\SEMESTR2M\EZI-projekt\projekt_EZI\projekt_EZI\obj\Debug\netcoreapp3.1\projekt_EZI.pdb
 E:\Adas\STUDIA\SEMESTR2M\EZI-projekt\projekt_EZI\projekt_EZI\obj\Debug\netcoreapp3.1\projekt_EZI.genruntimeconfig.cache
 E:\Adas\STUDIA\SEMESTR2M\EZI-projekt\projekt_EZI\projekt_EZI\obj\Debug\netcoreapp3.1\projekt_EZI.csproj.AssemblyReference.cache
+E:\Adas\STUDIA\SEMESTR2M\EZI-projekt\projekt_EZI\projekt_EZI\obj\Debug\netcoreapp3.1\Visualization\Visualization.g.cs
+E:\Adas\STUDIA\SEMESTR2M\EZI-projekt\projekt_EZI\projekt_EZI\obj\Debug\netcoreapp3.1\Visualization\Visualization.baml
