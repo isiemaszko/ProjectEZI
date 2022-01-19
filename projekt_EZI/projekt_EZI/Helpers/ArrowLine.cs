@@ -9,7 +9,7 @@ namespace projekt_EZI.Helpers
     public static class ArrowLine
     {
         private const double _maxArrowLengthPercent = 0.3; // factor that determines how the arrow is shortened for very short lines
-        private const double _lineArrowLengthFactor = 3.73205081; // 15 degrees arrow:  = 1 / Math.Tan(15 * Math.PI / 180); 
+        private const double _lineArrowLengthFactor = 16.73205081; // 15 degrees arrow:  = 1 / Math.Tan(15 * Math.PI / 180); 
 
         public static PointCollection CreateLineWithArrowPointCollection(Point startPoint, Point endPoint, double lineWidth)
         {

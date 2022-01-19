@@ -160,5 +160,15 @@ namespace projekt_EZI
             Visualization v = new Visualization(incidentList.matrix);
             v.Show();
         }
+
+        private void btnAdjacencyMatrix__Click(object sender, RoutedEventArgs e)
+        {
+            Eigenvector.SaveAdjacencyMatrix(incidentList.matrix);
+        }
+
+        private void btnClearRank_Click(object sender, RoutedEventArgs e)
+        {
+            RankingListView.Items.Clear();
+        }
     }
 }

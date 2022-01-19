@@ -15,22 +15,7 @@ namespace projekt_EZI.PrestigeCalculation
     {
         public static double[] CalculateEigenvectorsRanking(AdjacencyMatrix adjacencyMatrixText)
         {
-            using (FileStream fs = File.Create("matrix.csv"))
-            {
-                using (StreamWriter sw = new StreamWriter(fs))
-                {
-                    foreach (var page in adjacencyMatrixText.rows)
-                    {
-                        var row = string.Empty;
-                        foreach (var content in page.listOfDocuments)
-                        {
-                            row += (content.Value != 0 ? "1" : "0") + ",";
-                        }
-                        row = row.Remove(row.Length - 1);
-                        sw.WriteLine(row);
-                    }
-                }
-            }
+            SaveAdjacencyMatrix(adjacencyMatrixText);
 
 
             ProcessStartInfo start = new ProcessStartInfo();
@@ -50,6 +35,26 @@ namespace projekt_EZI.PrestigeCalculation
                 result[i++] = double.Parse(value);
             }
             return result;
+        }
+
+        public static void SaveAdjacencyMatrix(AdjacencyMatrix adjacencyMatrixText)
+        {
+            using (FileStream fs = File.Create("matrix.csv"))
+            {
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
+                    foreach (var page in adjacencyMatrixText.rows)
+                    {
+                        var row = string.Empty;
+                        foreach (var content in page.listOfDocuments)
+                        {
+                            row += (content.Value != 0 ? "1" : "0") + ",";
+                        }
+                        row = row.Remove(row.Length - 1);
+                        sw.WriteLine(row);
+                    }
+                }
+            }
         }
     }
 }

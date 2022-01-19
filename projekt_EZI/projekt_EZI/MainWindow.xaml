@@ -26,10 +26,12 @@
         <Label Content="D" HorizontalAlignment="Left" Margin="199,55,0,0" VerticalAlignment="Top"/>
         <Label Content="Iteration" HorizontalAlignment="Left" Margin="199,81,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="IterationTextBox" HorizontalAlignment="Left" Margin="259,85,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
-        <Button x:Name="GenerateBtn" Content="Generate" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Click="GenerateBtn_Click"/>
+        <Button x:Name="GenerateBtn" Content="Generate" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Click="GenerateBtn_Click" Width="167"/>
         <Rectangle HorizontalAlignment="Left" Height="46" Margin="194,171,0,0" Stroke="Black" VerticalAlignment="Top" Width="176"/>
         <Button x:Name="btnEigenvector" Content="Eigenvector" HorizontalAlignment="Left" Margin="208,184,0,0" VerticalAlignment="Top" Click="btnEigenvector_Click"/>
         <Button x:Name="visualizationBtn" Content="Show Visualization" HorizontalAlignment="Left" Margin="272,15,0,0" VerticalAlignment="Top" Click="visualizationBtn_Click"/>
+        <Button x:Name="btnAdjacencyMatrix_" Content="Generatr adjacency matrix" HorizontalAlignment="Left" Margin="389,15,0,0" VerticalAlignment="Top" Click="btnAdjacencyMatrix__Click"/>
+        <Button x:Name="btnClearRank" Content="Clear" HorizontalAlignment="Left" Margin="389,293,0,0" VerticalAlignment="Top" Width="205" Click="btnClearRank_Click"/>
 
     </Grid>
 </Window>
